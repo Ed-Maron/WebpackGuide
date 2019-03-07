@@ -4,7 +4,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
-	mode: 'development',
+	mode: 'production',
 	entry: {
 		app: './src/index.js'
 	},
@@ -21,6 +21,9 @@ module.exports = {
 		path: path.resolve(__dirname, 'dist'),
 		publicPath: '/'
 	},
+	// optimization: {
+	// 	usedExports: true
+	// },
 	module: {
 		rules: [
 			{
